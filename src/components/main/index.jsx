@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MainContent = styled.main`
-  gridArea: main;
+  grid-area: main;
   background-color: #fff;
   display: flex;
   justify-content: center;

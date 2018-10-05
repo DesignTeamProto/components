@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Form from '../Forms';
 import Input from '../Input';
 import Logo from '../Logo';
+import Icon from '../Icon';
 
 const MainHeader = styled.header`
   background: red;
@@ -19,9 +20,15 @@ const Header = () => (
   <MainHeader>
     <Logo />
     <Form>
-      <Input
-        type="search"
-      />
+      <div className="input-wrapper">
+        <Icon 
+          className="test"
+        />
+        <Input
+          type="text"
+          placeholder="Zoek naar klanten en relaties"
+        />
+      </div>
     </Form>
   </MainHeader>
 );

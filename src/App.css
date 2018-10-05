@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
   box-sizing: border-box;
 }
 
+::placeholder { 
+  color: rgba(255,255,255,0.7);
+}
+
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .App {
@@ -28,6 +38,12 @@ html {
 
 .App-link {
   color: #61dafb;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #rsg-root {

@@ -1,26 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import styled from 'styled-components';
+import Icons from '../../icons/search.svg';
 
-const Icon = ({ className, name, size }) => (
-  <i className={classnames(className, size)}>{name}</i>
+const IconStyle = styled.i`
+  color: #fff;
+  padding: 1rem;
+`;
+
+const IconImage = styled.img`
+  color: #fff;
+  opacity: 0.6;
+  height: 1.5rem;
+  width: 1.5rem;
+`;
+
+const Icon = ({ className, image }) => (
+  <IconStyle className={classnames(className)}>
+    <IconImage src={image} alt="search icon" />
+  </IconStyle>
 );
 
 Icon.propTypes = {
   /** Icon className */
   className: PropTypes.string,
 
-  /** Icon name */
-  name: PropTypes.string,
-
-  /** Icon size */
-  size: PropTypes.string,
+  /** Icon image */
+  image: PropTypes.string,
 };
 
 Icon.defaultProps = {
   className: 'icon',
-  name: 'icon',
-  size: 'm',
+  image: Icons,
 };
 
 export default Icon;
