@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Form from '../Forms';
+import Form from '../Form';
 import Input from '../Input';
 import Logo from '../Logo';
 import Icon from '../Icon';
@@ -27,15 +27,13 @@ const Header = () => (
     <Logo />
     <Form>
       <InputStyleWrapper>
-        <Icon
-          className="icon"
-        />
-        <Input
-          type="text"
-          placeholder="Zoek naar klanten en relaties"
-        />
+        <Icon className="search" />
+        <Input type="text" placeholder="Zoek naar klanten en relaties" />
       </InputStyleWrapper>
     </Form>
+    <Icon className="notifications" />
+    <Icon className="messages" />
+    <Icon className="tasks" />
   </MainHeader>
 );
 
