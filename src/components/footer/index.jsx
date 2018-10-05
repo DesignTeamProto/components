@@ -1,18 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const footerStyle = {
-  style: {
-    gridArea: 'footer',
-    backgroundColor: 'black',
-    display: 'flex',
-    justifyContent: 'center',
-  },
-};
+const MainFooter = styled.footer`
+  grid-area: footer;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+`;
 
 const Footer = () => (
-  <footer style={footerStyle.style}>
+  <MainFooter>
     Footer
-  </footer>
+  </MainFooter>
 );
 
 export default Footer;

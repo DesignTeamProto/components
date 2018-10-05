@@ -1,16 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const mainStyle = {
-  style: {
-    gridArea: 'main',
-    backgroundColor: 'white',
-    display: 'flex',
-    justifyContent: 'center',
-  },
-};
+const MainContent = styled.main`
+  gridArea: main;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+`;
 
 const Main = () => (
-  <main style={mainStyle.style} role="main">Main</main>
+  <MainContent role="main">
+    Main
+  </MainContent>
 );
 
 export default Main;
