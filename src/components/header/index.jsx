@@ -1,24 +1,29 @@
 import React from 'react';
-import HeaderSearch from '../Forms/Search';
+import styled from 'styled-components';
+import Form from '../Forms';
+import Input from '../Input';
 import Logo from '../Logo';
 
-const headerStyle = {
-  style: {
-    gridArea: 'header',
-    backgroundColor: '#001134',
-    display: 'flex',
-    justifyContent: 'space-between',
-    padding: '12px',
-  },
-};
+const MainHeader = styled.header`
+  background: red;
+  grid-area: header;
+  background-color: #001134;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+  height: 7rem;
+`;
 
-function Header() {
-  return (
-    <header style={headerStyle.style}>
-      <Logo />
-      <HeaderSearch />
-    </header>
-  );
-}
+const Header = () => (
+  <MainHeader>
+    <Logo />
+    <Form>
+      <Input
+        type="search"
+      />
+    </Form>
+  </MainHeader>
+);
 
 export default Header;
