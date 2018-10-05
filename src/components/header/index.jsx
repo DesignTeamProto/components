@@ -27,15 +27,13 @@ const Header = () => (
     <Logo />
     <Form>
       <InputStyleWrapper>
-        <Icon
-          className="test"
-        />
-        <Input
-          type="text"
-          placeholder="Zoek naar klanten en relaties"
-        />
+        <Icon className="search" />
+        <Input type="text" placeholder="Zoek naar klanten en relaties" />
       </InputStyleWrapper>
     </Form>
+    <Icon className="notifications" />
+    <Icon className="messages" />
+    <Icon className="tasks" />
   </MainHeader>
 );
 

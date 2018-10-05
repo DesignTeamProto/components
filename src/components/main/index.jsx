@@ -9,9 +9,7 @@ const MainContent = styled.main`
 `;
 
 const Main = () => (
-  <MainContent role="main">
-    Main
-  </MainContent>
+  <MainContent role="main" />
 );
 
 export default Main;
