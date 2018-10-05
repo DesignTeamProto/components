@@ -16,19 +16,25 @@ const MainHeader = styled.header`
   height: 7rem;
 `;
 
+const InputStyleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+`;
+
 const Header = () => (
   <MainHeader>
     <Logo />
     <Form>
-      <div className="input-wrapper">
-        <Icon 
+      <InputStyleWrapper>
+        <Icon
           className="test"
         />
         <Input
           type="text"
           placeholder="Zoek naar klanten en relaties"
         />
-      </div>
+      </InputStyleWrapper>
     </Form>
   </MainHeader>
 );
