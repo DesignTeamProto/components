@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Form from '../Forms';
+import Form from '../Form';
 import Input from '../Input';
 import Logo from '../Logo';
 import Icon from '../Icon';
