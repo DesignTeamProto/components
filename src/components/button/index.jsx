@@ -29,7 +29,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  className: 'btn btn-primary mr-2',
+  className: 'btn btn-primary',
   size: 'medium',
   disabled: false,
   onClick: event => ({

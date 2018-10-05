@@ -9,8 +9,8 @@ const mainStyle = {
   },
 };
 
-function Main() {
-  return <main style={mainStyle.style} role="main">Main</main>;
-}
+const Main = () => (
+  <main style={mainStyle.style} role="main">Main</main>
+);
 
 export default Main;

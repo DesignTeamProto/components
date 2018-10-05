@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Icon from '.';
+import Logo from '.';
 
-describe('<Icon />', () => {
+describe('<Logo />', () => {
   it('renders without crashing', () => {
     const wrapper = shallow((
-      <Icon />
+      <Logo />
     ));
     expect(wrapper.type).not.toBeUndefined();
   });
