@@ -6,7 +6,6 @@ const InputStyle = styled.input`
   outline: none;
   border: none;
   border-radius: 0.2rem;
-  width: 71rem;
   background-color: transparent;
   box-shadow: 0 0.2rem 0.3rem 0 rgba(39, 39, 39, 0.21);
   height: 4.2rem;
@@ -14,6 +13,7 @@ const InputStyle = styled.input`
   color: rgba(255,255,255,0.7);
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
+  width: 100%;
 `;
 
 const InputStyleIcon = styled(InputStyle)`

@@ -6,6 +6,7 @@ const MainFooter = styled.footer`
   background-color: #000;
   display: flex;
   justify-content: center;
+  height: 4rem;
 `;
 
 const Footer = () => (

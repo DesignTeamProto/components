@@ -18,7 +18,7 @@ const IconImage = styled.img`
 
 const Icon = ({ className, image }) => (
   <IconStyle>
-    <IconImage src={image} alt="search icon" className={classnames(className)} />
+    <IconImage src={image} alt="icon" className={classnames(className)} />
   </IconStyle>
 );
 
