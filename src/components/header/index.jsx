@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderSearch from '../forms/search';
-import Logo from '../logo';
+import HeaderSearch from '../Forms/Search';
+import Logo from '../Logo';
 
 const headerStyle = {
   style: {

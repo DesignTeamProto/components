@@ -1,5 +1,5 @@
 import React from 'react';
-import InputSearch from '../../fields/search';
+import InputSearch from '../../Fields/Search';
 
 function HeaderSearch() {
   return (

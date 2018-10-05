@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Header from "./components/header";
-import Main from "./components/main";
-import Footer from "./components/footer";
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
-class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Header />
-        <Main />
-        <Footer />
-      </React.Fragment>
-      );
-  }
+function App() {
+  return (
+    <React.Fragment>
+      <Header />
+      <Main />
+      <Footer />
+    </React.Fragment>
+  );
 }
- 
+
 export default App;
