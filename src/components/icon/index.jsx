@@ -12,8 +12,8 @@ const IconStyle = styled.i`
 const IconImage = styled.img`
   color: #fff;
   opacity: 0.6;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.7rem;
+  width: 1.7rem;
 `;
 
 const Icon = ({ className, image }) => (
