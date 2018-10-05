@@ -28,7 +28,7 @@ const Header = () => (
     <Form>
       <InputStyleWrapper>
         <Icon
-          className="test"
+          className="icon"
         />
         <Input
           type="text"
