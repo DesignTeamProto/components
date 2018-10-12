@@ -41,7 +41,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
-  placeholder: 'Zoek naar klanten en relaties',
+  placeholder: 'Placeholder',
   type: 'text',
 };
 
