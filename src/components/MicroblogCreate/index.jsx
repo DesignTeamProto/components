@@ -7,10 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import red from "@material-ui/core/colors/red";
-import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import ImageIcon from "@material-ui/icons/Image";
 import ContactSupportIcon from "@material-ui/icons/ContactSupport";
-import CommentIcon from "@material-ui/icons/Comment";
 import EventIcon from "@material-ui/icons/Event";
 import Divider from '@material-ui/core/Divider';
 
