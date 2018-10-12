@@ -7,13 +7,12 @@ import IconTasks from '../../icons/tasks.svg';
 
 
 const UserShortCuts = styled.ul`
-  background: red;
   grid-area: header;
-  background-color: #001134;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem;
+  padding: 1.4rem 1.4rem 1.4rem 0;
   height: 7rem;
   margin: 0;
 `;
