@@ -67,8 +67,11 @@ class RecipeReviewCard extends React.Component {
       <Card className={classes.card}>
         <CardHeader
           avatar={
-            <Avatar aria-label="Recipe" className={classes.avatar}>
-              R
+            <Avatar 
+              aria-label="Recipe"
+              alt="Adelle Charles"
+              src="https://randomuser.me/api/portraits/women/65.jpg"
+              className={classes.avatar}>
             </Avatar>
           }
           action={

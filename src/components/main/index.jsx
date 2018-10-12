@@ -5,6 +5,7 @@ import { ChromePicker } from 'react-color';
 import { Grid, Cell } from 'styled-css-grid';
 import Card from '../card';
 import MicroblogPost from '../MicroblogPost';
+import MicroblogPostExtended from '../MicroblogPostExtended';
 import MicroblogCreate from '../MicroblogCreate';
 import ImageGrid from '../ImageGrid';
 
@@ -19,6 +20,7 @@ class Main extends React.Component {
           <Cell width={6}>
             <MicroblogCreate />
             <MicroblogPost />
+            <MicroblogPostExtended />
           </Cell>
           
           <Cell width={6}>
