@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 const MainFooter = styled.footer`
   grid-area: footer;
-  background-color: #000;
+  background-color: #001134;
   display: flex;
   justify-content: center;
   height: 4rem;
 `;
 
 const Footer = () => (
-  <MainFooter>
+  <MainFooter >
     Footer
   </MainFooter>
 );
