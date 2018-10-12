@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+import classnames from "classnames";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
@@ -12,6 +13,7 @@ import red from "@material-ui/core/colors/red";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import CommentIcon from "@material-ui/icons/Comment";
 import Divider from '@material-ui/core/Divider';
+import ImageGridLarge from '../ImageGridLarge';
 
 const styles = theme => ({
   card: {
@@ -61,19 +63,15 @@ class RecipeReviewCard extends React.Component {
             <Avatar 
               aria-label="Recipe"
               alt="Adelle Charles"
-              src="https://randomuser.me/api/portraits/men/19.jpg"
+              src="https://randomuser.me/api/portraits/men/73.jpg"
               className={classes.avatar}>
             </Avatar>
           }
-          title="Shrimp and Chorizo Paella"
-          subheader="50 min ago in TEAM"
+          title="Check out my vacation pics"
+          subheader="10 min ago in EMBRACE"
         />
         <CardContent>
-          <Typography component="p">
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
-          </Typography>
+          <ImageGridLarge />
         </CardContent>
         <Divider />
         <CardActions className={classes.actions} disableActionSpacing>
