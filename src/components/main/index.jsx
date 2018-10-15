@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-import Image from '../../image.png';
-import { ChromePicker } from 'react-color';
+// import styled from 'styled-components';
+// import Image from '../../image.png';
+// import { ChromePicker } from 'react-color';
 import { Grid, Cell } from 'styled-css-grid';
 import Card from '../card';
 import MicroblogPost from '../MicroblogPost';
@@ -9,9 +9,9 @@ import MicroblogPostExtended from '../MicroblogPostExtended';
 import MicroblogCreate from '../MicroblogCreate';
 import ImageGrid from '../ImageGrid';
 
-const ContentLeft = styled.div`
-  grid-column: col-start 1 / span 6;
-`;
+// const ContentLeft = styled.div`
+//   grid-column: col-start 1 / span 6;
+// `;
 
 class Main extends React.Component {
   render() {

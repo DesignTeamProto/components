@@ -4,7 +4,7 @@ import should from 'should';
 import Button from '.';
 
 const wrapper = shallow((
-  <Button size="small">
+  <Button>
     Text
   </Button>
 ));

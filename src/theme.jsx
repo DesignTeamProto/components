@@ -1,15 +1,15 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 // DEFINE YOUR PRIMARY COLORS HERE //
-const primColors = {
-  black: '#000A1E',
-  primColor: '#176bff',
-};
+// const primColors = {
+//   black: '#000A1E',
+//   primColor: '#176bff',
+// };
 
-// DIMENSIONS SETTINGS //
-const dimensionSettings = {
-  spacing: '2rem',
-};
+// // DIMENSIONS SETTINGS //
+// const dimensionSettings = {
+//   spacing: '2rem',
+// };
 
 // MAIN //
 const theme = createMuiTheme({
