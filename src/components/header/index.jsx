@@ -17,6 +17,27 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../Logo';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+
+function TabContainer(props) {
+  return (
+    <Typography component="div" style={{ padding: 8 * 3 }}>
+      {props.children}
+    </Typography>
+  );
+}
+
+TabContainer.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+const StyledTabs = withStyles({
+  root: {
+    padding: '0 2rem',
+  },
+})(Tabs);
+    
 
 const styles = theme => ({
   Toolbar: {
@@ -88,6 +109,7 @@ const styles = theme => ({
 
 class PrimarySearchAppBar extends React.Component {
   state = {
+    value: 0,
     anchorEl: null,
     mobileMoreAnchorEl: null,
   };
@@ -109,9 +131,14 @@ class PrimarySearchAppBar extends React.Component {
     this.setState({ mobileMoreAnchorEl: null });
   };
 
+  handleChange = (event, value) => {
+    this.setState({ value });
+  };
+
   render() {
     const { anchorEl, mobileMoreAnchorEl } = this.state;
     const { classes } = this.props;
+    const { value } = this.state;
     const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -206,7 +233,17 @@ class PrimarySearchAppBar extends React.Component {
               </IconButton>
             </div>
           </Toolbar>
+          <StyledTabs value={value} onChange={this.handleChange}>
+            <Tab label="Start" />
+            <Tab label="Events" />
+            <Tab label="Teams" href="#basic-tabs" />
+            <Tab label="Collegas" href="#basic-tabs" />
+            <Tab label="Knowledge" href="#basic-tabs" />
+            <Tab label="Weten en regelen" href="#basic-tabs" />
+            <Tab label="Over ons" href="#basic-tabs" />
+          </StyledTabs>
         </AppBar>
+
         {renderMenu}
         {renderMobileMenu}
       </div>
