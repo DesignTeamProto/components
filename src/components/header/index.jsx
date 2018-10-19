@@ -17,6 +17,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../Logo';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import Typography from "@material-ui/core/Typography";
 
 function TabContainer(props) {
   return (

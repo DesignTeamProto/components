@@ -4,24 +4,65 @@
 import Button from '../Button';
 ```
 
-### Button
+### Text buttons
 
-```jsx
-<Button>Primary</Button>
-<Button buttonStyle="btn-secondary">Secondary</Button>
-<Button buttonStyle="btn-success">Success</Button>
-<Button buttonStyle="btn-warning">Warning</Button>
-<Button buttonStyle="btn-danger">Danger</Button>
-<Button buttonStyle="btn-info">Info</Button>
-<Button buttonStyle="btn-light">Light</Button>
-<Button buttonStyle="btn-dark">Dark</Button>
-<Button buttonStyle="btn-link">Link</Button>
+```js
+<Button>Default</Button>
+<Button color="primary">Primary</Button>
+<Button color="secondary">Secondary</Button>
+<Button disabled>Disabled</Button>
+<Button href="#button">Link</Button>
 ```
 
-Button with onClick:
+### Contained buttons
 
-```jsx
-<Button onClick={() => setState({ loaded: !state.loaded })}>
+```js
+<Button variant="contained">Default</Button>
+<Button variant="contained" color="primary">Primary</Button>
+<Button variant="contained" color="secondary">Secondary</Button>
+<Button variant="contained" disabled>Disabled</Button>
+<Button variant="contained" href="#button">Link</Button>
+```
+
+### Outlined buttons
+
+```js
+<Button variant="outlined">Default</Button>
+<Button variant="outlined" color="primary">Primary</Button>
+<Button variant="outlined" color="secondary">Secondary</Button>
+<Button variant="outlined" disabled>Disabled</Button>
+<Button variant="outlined" href="#button">Link</Button>
+```
+
+### Floating action buttons
+
+```js
+<Button variant="fab" color="primary" aria-label="Letter A">A</Button>
+<Button variant="fab" color="secondary" aria-label="Letter B">B</Button>
+<Button variant="extendedFab" aria-label="Directions">Directions</Button>
+<Button variant="fab" disabled aria-label="Letter D">D</Button>
+```
+
+### Mini Floating action buttons
+
+```js
+<Button variant="fab" mini="true" color="primary" aria-label="Letter A">A</Button>
+<Button variant="fab" mini="true" color="secondary" aria-label="Letter B">B</Button>
+<Button variant="fab" mini="true" disabled aria-label="Letter C">C</Button>
+```
+
+### Sizes
+
+```js
+<Button variant="contained" color="primary" size="small">Small</Button>
+<Button variant="contained" color="primary" size="medium">Medium</Button>
+<Button variant="contained" color="primary" size="large">Large</Button>
+```
+
+### Clickhandler
+
+```js
+<Button variant="contained" onClick={() => setState({ loaded: !state.loaded })}>
   {state.loaded ? 'Pushed!' : 'Push me!'}
 </Button>
 ```

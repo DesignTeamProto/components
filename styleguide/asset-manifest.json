@@ -1,13 +1,8 @@
 {
-  "main.js": "/build/main.18846209.js",
-  "build/0.5f5083c3.js": "/build/0.5f5083c3.js",
+  "main.js": "/build/main.1ff5ec62.js",
+  "build/0.bcf45957.js": "/build/0.bcf45957.js",
   "build/1.b37c164b.js": "/build/1.b37c164b.js",
   "runtime~main.js": "/build/bundle.6f076c24.js",
   "static/media/logo.svg": "/static/media/logo.76c52d50.svg",
-  "static/media/messages.svg": "/static/media/messages.d97fa9ad.svg",
-  "static/media/search.svg": "/static/media/search.3b76ec12.svg",
-  "static/media/tasks.svg": "/static/media/tasks.e3c7c2d7.svg",
-  "static/media/image.png": "/static/media/image.98feb57e.png",
-  "static/media/notifications.svg": "/static/media/notifications.a314ce45.svg",
   "index.html": "/index.html"
 }

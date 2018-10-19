@@ -1,8 +1,8 @@
 module.exports = {
   components: 'src/components/**/*.jsx',
   sections: [
-    { name: 'Components', components: 'src/components/**/*.jsx' },
-    { name: 'Material components', components: 'src/material-components/**/*.jsx' },
+    { name: 'Components (js)', components: 'src/components/**/*.js' },
+    { name: 'Components (jsx)', components: 'src/components/**/*.jsx' },
   ],
   exampleMode: 'expand',
   usageMode: 'expand',
