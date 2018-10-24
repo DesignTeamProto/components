@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const InputStyle = styled.input`
+  box-sizing: border-box;
   width: 100%;
   padding: 0.4rem 1rem;
 `;

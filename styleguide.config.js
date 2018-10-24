@@ -1,3 +1,5 @@
+const { styles, theme } = require('./styleguide.styles');
+
 module.exports = {
   components: 'src/components/**/*.jsx',
   sections: [
@@ -7,4 +9,6 @@ module.exports = {
   exampleMode: 'expand',
   usageMode: 'expand',
   skipComponentsWithoutExample: true,
+  styles,
+  theme,
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const TestButton = ({
   accessibilityLabel,
@@ -9,7 +10,7 @@ const TestButton = ({
   href,
   name,
   onClick = () => null,
-  color = 'primary',
+  state = 'primary',
   type = 'submit',
   variant = 'contained',
 }) => {
@@ -18,7 +19,7 @@ const TestButton = ({
       <a
         href={href}
         name={name}
-        className={classNames('link', color)}
+        className={classNames('link', state)}
         disabled={disabled}
         onClick={onClick}
         aria-label={accessibilityLabel}
@@ -31,12 +32,12 @@ const TestButton = ({
     <button
       type={type}
       name={name}
-      className={classNames(variant, color)}
+      className={classNames(variant, state)}
       disabled={disabled}
       onClick={onClick}
       aria-label={accessibilityLabel}
     >
-      {children}
+      { state === 'loading' ? <CircularProgress /> : children }
     </button>
   );
 };
@@ -61,9 +62,10 @@ TestButton.propTypes = {
   onClick: PropTypes.func,
 
   /** When provided, the button will be displayed with a different color */
-  color: PropTypes.oneOf([
+  state: PropTypes.oneOf([
     'primary',
     'secondary',
+    'loading',
     'danger',
   ]),
 

@@ -1,22 +1,22 @@
 ### Import component
 
-```js static
+```jsx static
 import Badge from '../Badge';
 ```
 
-### Badge colors
+### Usage
 
 ```js
-<Badge color="default" badgeContent={8}>
-  <Button variant="contained">Default</Button>
+<Badge badgeContent={5} color="secondary">
+  <Button raised>Default</Button>
 </Badge>
-<Badge color="primary" badgeContent={59}>
-  <Button variant="contained">Primary</Button>
+<Badge badgeContent={8} color="primary">
+  <Button outlined>Default</Button>
 </Badge>
-<Badge color="secondary" badgeContent={4}>
-  <Button variant="contained">Secondary</Button>
+<Badge badgeContent={18987} color="secondary">
+  <Button raised>Default</Button>
 </Badge>
-<Badge color="error" badgeContent={6}>
-  <Button variant="contained">Error</Button>
+<Badge badgeContent='99+' color="primary">
+  <Button outlined>Default</Button>
 </Badge>
 ```

@@ -1,49 +1,63 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MuiBadge from '@material-ui/core/Badge';
+import classNames from 'classnames';
+import styled from 'styled-components';
+
+const StyledBadge = styled.span`
+  display: inline-flex;
+  position: relative;
+  margin-right: 16px;
+
+  .badge__content {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    border-radius: 22px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 8px;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+  }
+  .badge__content--primary {
+      background-color: #5D5CC5;
+      color: #fff;
+  }
+  .badge__content--secondary {
+      background-color: #58AEB5;
+      color: #fff;
+  }
+`;
+
 
 const Badge = ({
-  badgeContent, classes, children, color, component,
+  badgeContent,
+  children,
+  color = 'primary',
 }) => (
-  <MuiBadge
-    badgeContent={badgeContent}
-    classes={classes}
-    color={color}
-    component={component}
-  >
+  <StyledBadge className="badge">
     {children}
-  </MuiBadge>
+    <span className={classNames('badge__content', [`badge__content--${color}`])}>{badgeContent}</span>
+  </StyledBadge>
 );
 
-// Specifies the default values for props:
-Badge.defaultProps = {
-  color: 'default',
-  component: 'span',
-};
-
 Badge.propTypes = {
-  /** The content rendered within the badge */
-  badgeContent: PropTypes.node.isRequired,
+  /** This will contain text and/or an icon */
+  badgeContent: PropTypes.string.isRequired,
 
-  /** The badge will be added relative to this node */
+  /** This will contain a button or an icon */
   children: PropTypes.node.isRequired,
 
-  /** Classes for the badge */
-  classes: PropTypes.object,
-
-  /** The color of the component */
+  /** When provided, the badge will be displayed with a different color */
   color: PropTypes.oneOf([
-    'default',
     'primary',
     'secondary',
-    'error',
-  ]),
-
-  /** The component used for the root node */
-  component: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.object,
   ]),
 };
 

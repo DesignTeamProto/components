@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import TestIcon from '@material-ui/icons/ThreeDRotation';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import TestButton from '.';
 
 /** Tests for component <TestButton /> */
@@ -87,15 +88,16 @@ describe('<TestButton />', () => {
 
   /** State tests */
   describe('State tests', () => {
-    it('Should default to color=primary', () => {
+    it('Should default to state=primary', () => {
       expect(wrapper.hasClass('primary')).toBe(true);
     });
-    it('Should have color if passed one', () => {
-      wrapper.setProps({ color: 'secondary' });
+    it('Should have state if passed one', () => {
+      wrapper.setProps({ state: 'secondary' });
       expect(wrapper.hasClass('secondary')).toBe(true);
     });
     it('Should make text invisible and add loading indicator when pushed', () => {
-      /** tests */
+      wrapper.setProps({ state: 'loading' });
+      expect(wrapper.find(CircularProgress)).toHaveLength(1);
     });
     it('Should have text and no loading indicator when loading is done', () => {
       /** tests */
