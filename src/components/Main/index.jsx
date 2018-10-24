@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Cell } from 'styled-css-grid';
-import Card from '../card';
+import Card from '../Card';
 import MicroblogPost from '../MicroblogPost';
 import MicroblogPostExtended from '../MicroblogPostExtended';
 import MicroblogCreate from '../MicroblogCreate';
