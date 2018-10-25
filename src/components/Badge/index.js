@@ -35,7 +35,6 @@ const StyledBadge = styled.span`
   }
 `;
 
-
 const Badge = ({
   badgeContent,
   children,

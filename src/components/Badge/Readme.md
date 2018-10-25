@@ -19,4 +19,11 @@ import Badge from '../Badge';
 <Badge badgeContent='99+' color="primary">
   <Button outlined>Default</Button>
 </Badge>
+<Badge badgeContent={5} color="secondary">
+  <IconButton icon="star" />
+</Badge>
+<Badge badgeContent={8} color="primary">
+  <Icon icon="local_pizza" iconOptions={{strategy: 'ligature'}} />
+</Badge>
+
 ```

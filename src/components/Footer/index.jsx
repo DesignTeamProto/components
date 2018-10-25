@@ -10,7 +10,7 @@ const MainFooter = styled.footer`
 `;
 
 const Footer = () => (
-  <MainFooter >
+  <MainFooter>
     Footer
   </MainFooter>
 );
